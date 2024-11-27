@@ -58,7 +58,7 @@ void DrawHangman(int guesCount=0){
     else
         PrintMessage("", false, false);
     if (guesCount == 8)
-        PrintMessage("/| ", false, false);
+        PrintMessage("/  ", false, false);
     if (guesCount >= 9)
         PrintMessage("/ \\", false, false);
 }
@@ -115,7 +115,7 @@ string LoadRondomWords(){
 
 int TriesLeft(string word,string guessed){
     int error = 0;
-    for (int i = 0; i < guessed.length(); i++)
+    for (int i = 0; i <= guessed.length(); i++)
     {
        if(word.find(guessed[i])==string::npos){
         error++;
@@ -133,6 +133,7 @@ int main()
     bool win=false;
     do
     {
+        system("cls");
         PrintMessage("HANG MAN IS COOL");
         DrawHangman(10-tries);
         PrintAvailableLetters(gueses);
