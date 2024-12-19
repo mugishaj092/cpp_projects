@@ -1,0 +1,7 @@
+User: user1 | Access: Granted | Time: 1734587299
+User: user1 | Access: Denied | Time: 1734587364
+User: user1 | Access: Denied | Time: 1734587369
+User: admin | Access: Denied | Time: 1734587500
+User: walmond | Access: Granted | Time: 1734587927
+User: walmond | Access: Granted | Time: 1734588089
+User: walmond | Access: Granted | Time: 1734588257
